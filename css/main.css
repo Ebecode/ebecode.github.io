@@ -16,11 +16,13 @@ html {
   --banner-bg: url(/images/janusz-maniak-131633-unsplash.jpg);
   --section-bg: url(/images/fabian-stroobants-1483667-unsplash.jpg);
   --project-bg: url(/images/jonathan-j-castellon-1052878-unsplash.jpg);
+
   /* replace with image folder address 
   --banner-bg: url(https://images.unsplash.com/photo-1472820555436-84b6cad88e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80);
   --section-bg: url(https://images.unsplash.com/photo-1554209377-15e1415c9936?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
   --project-bg: url(https://images.unsplash.com/photo-1536637822328-19377a638a74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
 */
+
   --black: #111;
   --darker: #222;
   --dark: #333;
@@ -84,7 +86,7 @@ header {
   border-bottom: 2px solid var(--light);
 }
 header:hover {
-  background-color: var(--glass-2);
+  background-color: var(--glass-1);
 }
 
 .brand {
@@ -101,11 +103,14 @@ header:hover {
 .menu i {
   color: var(--white);
 }
+.menu i:hover {
+  cursor: pointer;
+}
 
 nav {
   display: flex;
   flex-direction: column;
-  background-color: var(--glass-3);
+  background-color: var(--glass-2);
   position: fixed;
   top: -55vh;
   left: 0;
@@ -114,7 +119,7 @@ nav {
   box-sizing: border-box;
 }
 nav.shown {
-  top: 52px;
+  top: 45px;
 }
 nav .nav-link {
   display: block;
@@ -125,7 +130,8 @@ nav .nav-link {
   text-transform: uppercase;
 }
 nav .nav-link:hover {
-  background-color: var(--glass-2);
+  background-color: var(--glass-1);
+  color: var(--blue);
 }
 
 /* Banner styles */
@@ -207,6 +213,15 @@ nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
+.project .overlay .p-head .circle:hover {
+  border: 2px solid var(--blue);
+  background-color: var(--glass-2);
+  cursor: pointer;
+}
+.project .overlay .p-head .circle i:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
 
 /* Section styles */
 .bg {
@@ -276,6 +291,12 @@ nav .nav-link:hover {
   border: none;
   border-bottom: 2px solid var(--mid);
   background-color: var(--glass-2);
+  color: var(--white);
+}
+
+.contact .text-box:focus {
+  outline: none;
+  border-bottom-color: var(--blue);
 }
 .contact input[type="submit"] {
   margin: 0 auto;
@@ -306,4 +327,7 @@ footer {
 footer .foot-link {
   margin: 0 1rem;
   color: var(--light);
+}
+footer .foot-link:hover {
+  color: var(--blue);
 }
