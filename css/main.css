@@ -36,6 +36,8 @@ html {
   --glass-3: rgba(17, 17, 17, 0.6);
   --glass-4: rgba(51, 51, 51, 0.8);
   --glass-5: rgba(255, 255, 255, 0.8);
+
+  --easeOut: all 0.3s ease-out;
 }
 
 h1,
@@ -64,6 +66,7 @@ a {
   color: var(--white);
 
   text-transform: capitalize;
+  transition: var(--easeOut);
 }
 .btn:hover {
   cursor: pointer;
@@ -84,6 +87,8 @@ header {
   width: 100%;
   box-sizing: border-box;
   border-bottom: 2px solid var(--light);
+
+  transition: var(--easeOut);
 }
 header:hover {
   background-color: var(--glass-1);
@@ -94,6 +99,8 @@ header:hover {
   font-family: var(--heading);
   font-weight: bold;
   color: var(--white);
+
+  transition: var(--easeOut);
 }
 
 .brand:hover {
@@ -102,9 +109,11 @@ header:hover {
 
 .menu i {
   color: var(--white);
+  transition: var(--easeOut);
 }
 .menu i:hover {
   cursor: pointer;
+  color: var(--blue);
 }
 
 nav {
@@ -128,6 +137,8 @@ nav .nav-link {
   color: var(--white);
   text-align: center;
   text-transform: uppercase;
+
+  transition: var(--easeOut);
 }
 nav .nav-link:hover {
   background-color: var(--glass-1);
@@ -190,21 +201,23 @@ nav .nav-link:hover {
   box-sizing: border-box;
   padding: 0.5rem 2rem;
   width: 100%;
-  /* min-height: 88%; */
   height: 30%;
   color: var(--white);
   background-color: var(--glass-2);
   position: relative;
 
   top: -30%;
-  /* top: -100%; */
+}
+.portfolio .project .overlay.show-overlay {
+  height: 100%;
+  top: -100%;
 }
 .portfolio .project .overlay .p-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.portfolio .project .overlay .p-head .circle {
+.portfolio .project .overlay .p-head .circle.btn {
   padding: 1rem;
 
   border-radius: 50%;
@@ -213,14 +226,26 @@ nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-.project .overlay .p-head .circle:hover {
+.portfolio .project .overlay .p-head .circle.btn i {
+  color: var(--white);
+}
+.project .overlay .p-head .circle.btn:hover {
   border: 2px solid var(--blue);
   background-color: var(--glass-2);
   cursor: pointer;
 }
-.project .overlay .p-head .circle i:hover {
+.project .overlay .p-head .circle.btn i:hover {
   color: var(--blue);
   cursor: pointer;
+}
+.overlay a {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section styles */
@@ -312,6 +337,8 @@ nav .nav-link:hover {
 .contact .action-link:hover {
   border-width: 2px;
   padding: 0.3rem;
+
+  transition: var(--easeOut);
 }
 
 /* Footer styles */
@@ -327,6 +354,8 @@ footer {
 footer .foot-link {
   margin: 0 1rem;
   color: var(--light);
+
+  transition: var(--easeOut);
 }
 footer .foot-link:hover {
   color: var(--blue);
