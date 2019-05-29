@@ -13,9 +13,9 @@ html {
   --heading: "Quicksand", sans-serif;
   --paragraph: "Source Sans Pro", sans-serif;
 
-  --banner-bg: url(/images/janusz-maniak-131633-unsplash.jpg);
-  --section-bg: url(/images/fabian-stroobants-1483667-unsplash.jpg);
-  --project-bg: url(/images/jonathan-j-castellon-1052878-unsplash.jpg);
+  --banner-bg: url(https://images.unsplash.com/photo-1472820555436-84b6cad88e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80);
+  --section-bg: url(https://images.unsplash.com/photo-1554209377-15e1415c9936?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  --project-bg: url(https://images.unsplash.com/photo-1536637822328-19377a638a74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
 
   --black: #111;
   --darker: #222;
