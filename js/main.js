@@ -4,6 +4,8 @@ const menuIcon = menu.firstChild;
 const nav = document.querySelector("nav");
 const overlay = document.querySelectorAll(".overlay");
 const outside = document;
+const showEmail = document.querySelector(".show-email");
+const myEmail = document.querySelector(".my-email");
 
 // functions
 function toggleClass(elem, str) {
@@ -70,3 +72,13 @@ overlay.forEach(btn => {
     false
   );
 });
+
+showEmail.addEventListener(
+  "click",
+  e => {
+    myEmail.style.visibility = "visible";
+
+    e.stopPropagation();
+  },
+  false
+);

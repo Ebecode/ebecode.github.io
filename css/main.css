@@ -352,8 +352,12 @@ nav .nav-link:hover {
 .contact .action-link:hover {
   border-width: 2px;
   padding: 0.3rem;
+  cursor: pointer;
 
   transition: var(--easeOut);
+}
+.contact .my-email {
+  visibility: hidden;
 }
 
 /* Footer styles */
